@@ -29,6 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     loadingSpinnerTwo.remove();
 
     discussContainer.style.display = readContainer.style.display = "block";
-    postContainer.style.display = "flex";
+    postContainer.style.display = "grid";
   }, 2000);
 });

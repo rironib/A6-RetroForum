@@ -24,7 +24,7 @@ function loadData(data) {
           <img class="w-auto h-auto" src="${post.cover_image}" alt="">
       </div>
       <div class="flex items-center text-[#12132D99] gap-2 mb-3">
-          <img class="w-5 h-5" src="https://b9a6-retro-forum-rironib.vercel.app/images/icons/calendar.svg" alt="">
+          <img class="w-5 h-5" src="images/icons/calendar.svg" alt="">
           ${postedDate}
       </div>
       <h3 class="text-xl font-bold mb-3">${post.title}</h3>
