@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReTro</title>
+    <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
+    <title>ReTro - Best Technical Forum</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
@@ -119,6 +120,7 @@
     </header>
 
     <main class="w-11/12 max-w-[1280px] mx-auto">
+
         <!-- Let’s Discuss Section -->
         <section class="mb-24">
             <div class="text-center">
@@ -130,7 +132,43 @@
                     Discuss forum platform.
                 </p>
             </div>
-            <div></div>
+            <div id="discuss-section" class="flex justify-center gap-10">
+                <div id="discuss-container" class="lg:w-8/12 space-y-4">
+                    <div class="bg-[#797DFC1A] p-10 rounded-xl"></div>
+                    <div class="bg-[#12132D0D] p-10 rounded-xl"></div>
+                </div>
+                <div id="read-container" class="lg:w-4/12 bg-[#12132D0D] p-6 rounded-xl">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold text-xl">
+                            Title
+                        </h3>
+                        <h6 class="flex gap-2 text-[#12132D99]">
+                            <img class="w-5 h-5" src="images/icons/check-double.svg" alt="">
+                            Mark as read (<span>0</span>)
+                        </h6>
+                    </div>
+                    <div id="read-list" class="space-y-4">
+                        <div class="flex justify-between gap-1 bg-white p-4 rounded-xl">
+                            <h2 class="font-bold">10 Kids Unaware of Their Halloween Costume</h2>
+                            <div class="flex items-center gap-1">
+                                <img class="w-5 h-5" src="images/icons/eye-line.svg" alt=""> 1,568
+                            </div>
+                        </div>
+                        <div class="flex justify-between gap-1 bg-white p-4 rounded-xl">
+                            <h2 class="font-bold">10 Kids Unaware of Their Halloween Costume</h2>
+                            <div class="flex items-center gap-1">
+                                <img class="w-5 h-5" src="images/icons/eye-line.svg" alt=""> 1,568
+                            </div>
+                        </div>
+                        <div class="flex justify-between gap-1 bg-white p-4 rounded-xl">
+                            <h2 class="font-bold">10 Kids Unaware of Their Halloween Costume</h2>
+                            <div class="flex items-center gap-1">
+                                <img class="w-5 h-5" src="images/icons/eye-line.svg" alt=""> 1,568
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Newsletter Section -->
@@ -160,8 +198,29 @@
                     engaged with the community.
                 </p>
             </div>
-            <div>
-                <div></div>
+            <div id="post-container" class="grid grid-cols-3">
+                <div class="p-6 border rounded-xl">
+                    <div class="w-full h-48 bg-[#12132D0D] mb-6 rounded-xl overflow-hidden">
+                        <img class="w-auto h-auto" src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="">
+                    </div>
+                    <div class="flex items-center text-[#12132D99] gap-2 mb-3">
+                        <img class="w-5 h-5" src="images/icons/calendar.svg" alt="">
+                        29 January 2024
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">What will a mars habitat force that impact in our daily life!!!
+                    </h3>
+                    <p class="text-[#12132D99] mb-4">Yes, you can run unit tests and view the results directly within
+                        the
+                        app. </p>
+                    <div class="flex gap-3">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="">
+                        <div>
+                            <h5 class="font-bold">Cameron Williamson</h5>
+                            <h6 class="text-sm text-[#12132D99]">Unknown</>
+                        </div>
+                    </div>
+                </div>
                 <div></div>
                 <div></div>
             </div>
@@ -191,6 +250,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/loading.js"></script>
 </body>
 
 </html>
