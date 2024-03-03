@@ -130,7 +130,7 @@
     <main class="w-11/12 max-w-[1280px] mx-auto">
 
         <!-- Let’s Discuss Section -->
-        <section class="mb-24">
+        <section id="discuss-section" class="mb-24">
             <div class="text-center">
                 <h1 class="text-4xl font-extrabold mb-6">
                     Let’s Discuss
@@ -140,7 +140,7 @@
                     Discuss forum platform.
                 </p>
             </div>
-            <div id="discuss-section" class="font-inter flex flex-col lg:flex-row gap-10">
+            <div class="font-inter flex flex-col lg:flex-row gap-10">
                 <div id="discuss-container" class="lg:w-8/12 space-y-4">
                     <div id="post" class="bg-[#12132D0D] flex flex-col lg:flex-row gap-6 p-4 lg:p-10 border rounded-xl">
                         <div class="indicator w-24 h-24 bg-white rounded-xl">
@@ -253,7 +253,7 @@
         </section>
 
         <!-- Latest Post Section -->
-        <section class="mb-24">
+        <section id="post-section" class="mb-24">
             <div class="text-center">
                 <h1 class="text-4xl font-extrabold mb-6">
                     Latest Posts
@@ -263,32 +263,7 @@
                     engaged with the community.
                 </p>
             </div>
-            <div id="post-container" class="grid grid-cols-1 lg:grid-cols-3">
-                <div class="p-6 border rounded-xl">
-                    <div class="w-full h-48 bg-[#12132D0D] mb-6 rounded-xl overflow-hidden">
-                        <img class="w-auto h-auto" src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="">
-                    </div>
-                    <div class="flex items-center text-[#12132D99] gap-2 mb-3">
-                        <img class="w-5 h-5" src="images/icons/calendar.svg" alt="">
-                        29 January 2024
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">What will a mars habitat force that impact in our daily life!!!
-                    </h3>
-                    <p class="text-[#12132D99] mb-4">Yes, you can run unit tests and view the results directly within
-                        the
-                        app. </p>
-                    <div class="flex gap-3">
-                        <img class="w-10 h-10 rounded-full"
-                            src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="">
-                        <div>
-                            <h5 class="font-bold">Cameron Williamson</h5>
-                            <h6 class="text-sm text-[#12132D99]">Unknown</>
-                        </div>
-                    </div>
-                </div>
-                <div></div>
-                <div></div>
-            </div>
+            <div id="post-container" class="grid grid-cols-1 lg:grid-cols-3 gap-4"> </div>
         </section>
     </main>
 
@@ -315,6 +290,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/post.js"></script>
     <script src="js/loading.js"></script>
 </body>
 

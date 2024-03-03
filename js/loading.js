@@ -1,21 +1,34 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const discussContainer = document.getElementById("discuss-container");
-//   const readContainer = document.getElementById("read-container");
-//   discussContainer.style.display = readContainer.style.display = "none";
+document.addEventListener("DOMContentLoaded", function () {
+  const discussContainer = document.getElementById("discuss-container");
+  const readContainer = document.getElementById("read-container");
+  const postContainer = document.getElementById("post-container");
 
-//   //   const loadingOverlay = document.createElement("div");
-//   //   loadingOverlay.classList.add("flex", "justify-center", "items-center");
+  discussContainer.style.display =
+    readContainer.style.display =
+    postContainer.style.display =
+      "none";
 
-//   const loadingSpinner = document.createElement("div");
-//   loadingSpinner.classList.add("loading", "loading-infinity", "loading-lg");
+  const createLoadingSpinner = () => {
+    const loadingSpinner = document.createElement("div");
+    loadingSpinner.classList.add("flex", "justify-center", "items-center");
+    loadingSpinner.innerHTML = `<div class="loading loading-infinity loading-lg"></div>`;
+    return loadingSpinner;
+  };
 
-//   //   loadingOverlay.appendChild(loadingSpinner);
+  const loadingSpinnerOne = createLoadingSpinner();
+  const loadingSpinnerTwo = createLoadingSpinner();
 
-//   const loadingContainer = document.getElementById("discuss-section");
-//   loadingContainer.appendChild(loadingSpinner);
+  const loadingContainerOne = document.getElementById("discuss-section");
+  const loadingContainerTwo = document.getElementById("post-section");
 
-//   setTimeout(function () {
-//     loadingSpinner.remove();
-//     discussContainer.style.display = readContainer.style.display = "block";
-//   }, 2000);
-// });
+  loadingContainerOne.appendChild(loadingSpinnerOne);
+  loadingContainerTwo.appendChild(loadingSpinnerTwo);
+
+  setTimeout(function () {
+    loadingSpinnerOne.remove();
+    loadingSpinnerTwo.remove();
+
+    discussContainer.style.display = readContainer.style.display = "block";
+    postContainer.style.display = "flex";
+  }, 2000);
+});
