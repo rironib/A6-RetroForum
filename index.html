@@ -11,16 +11,21 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <style>
-        body {
+        .font-mulish {
             font-family: "Mulish", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
         }
     </style>
 </head>
 
-<body>
+<body class="font-mulish">
     <!-- Navbar Section -->
     <header class="w-11/12 max-w-[1280px] mx-auto">
         <div class="navbar">
@@ -89,12 +94,15 @@
                             Engage in discussions, share insights, and connect with like-minded individuals on this
                             vibrant forum platform.
                         </div>
-                        <div class="lg:w-3/4 input input-bordered flex items-center gap-2 rounded-full">
-                            <input type="text" class="grow text-black text-lg pl-2"
-                                placeholder="Search here anything" />
-                            <span
-                                class="badge badge-info font-semibold text-lg text-white bg-[#797DFC] py-4 px-5">Search</span>
+                        <div class="relative">
+                            <input type="text" id="default-search"
+                                class="block w-full py-4 px-6 text-black border border-gray-300 bg-gray-50 rounded-full"
+                                placeholder="Search here anything" required />
+                            <button type="submit"
+                                class="text-white absolute end-2.5 bottom-2.5 bg-[#797DFC] font-medium rounded-full px-4 lg:px-6 py-2 ">Search</button>
                         </div>
+
+
                     </div>
                     <div class="lg:min-w-96 bg-white p-12 text-xl font-medium rounded-xl flex flex-col justify-between">
                         <div class="flex justify-between">
@@ -127,45 +135,102 @@
                 <h1 class="text-4xl font-extrabold mb-6">
                     Let’s Discuss
                 </h1>
-                <p class="lg:w-1/2 mx-auto text-[#12132D99] mb-12">
+                <p class="font-inter lg:w-1/2 mx-auto text-[#12132D99] mb-12">
                     Engage in vibrant discussions, share insights, and connect with a diverse community on the Let's
                     Discuss forum platform.
                 </p>
             </div>
-            <div id="discuss-section" class="flex justify-center gap-10">
+            <div id="discuss-section" class="font-inter flex flex-col lg:flex-row gap-10">
                 <div id="discuss-container" class="lg:w-8/12 space-y-4">
-                    <div class="bg-[#797DFC1A] p-10 rounded-xl"></div>
+                    <div id="post" class="bg-[#12132D0D] flex flex-col lg:flex-row gap-6 p-4 lg:p-10 border rounded-xl">
+                        <div class="indicator w-24 h-24 bg-white rounded-xl">
+                            <span class="indicator-item badge badge-success border-2 border-white"></span>
+                            <img class="w-full rounded-xl" src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg"
+                                alt="Author">
+                        </div>
+                        <div class="post-content">
+                            <div class="flex gap-5 mb-3">
+                                <span># Music</span>
+                                <h6>Author : <span>Awlad Hossain</span></h6>
+                            </div>
+                            <div id="discuss-title" class="font-mulish text-[#12132D] text-2xl font-bold mb-4">10 Kids
+                                Unaware of Their
+                                Halloween
+                                Costume</div>
+                            <div class="mb-5 pb-5 text-[#12132D99] border-b-2 border-dashed">
+                                It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s
+                                your prerogative
+                            </div>
+                            <div id="post-info" class="flex justify-between">
+                                <div class="flex items-center gap-2 lg:gap-2 *:text-[#12132D99]">
+                                    <img src="images/icons/comment.svg" alt="">
+                                    <span id="comment">560</span>
+                                    <span></span>
+                                    <img src="images/icons/time.svg" alt="">
+                                    <span id="view-time">1,566</span>
+                                    <span></span>
+                                    <img src="images/icons/eye.svg" alt="">
+                                    <span id="read-time">5 min</span>
+                                </div>
+                                <button id="read-button">
+                                    <img src="images/icons/email.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="post" class="bg-[#12132D0D] flex flex-col lg:flex-row gap-6 p-4 lg:p-10 border rounded-xl">
+                        <div class="indicator w-24 h-24 bg-white rounded-xl">
+                            <span class="indicator-item badge badge-success border-2 border-white"></span>
+                            <img class="w-full rounded-xl" src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg"
+                                alt="Author">
+                        </div>
+                        <div class="">
+                            <div class="flex gap-5 mb-3">
+                                <span># Music</span>
+                                <h6>Author : <span>Awlad Hossain</span></h6>
+                            </div>
+                            <div id="discuss-title" class="font-mulish text-[#12132D] text-2xl font-bold mb-4">20 Kids
+                                Unaware of Their
+                                Halloween
+                                Costume</div>
+                            <div class="mb-5 pb-5 text-[#12132D99] border-b-2 border-dashed">
+                                It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s
+                                your prerogative
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2 lg:gap-6 *:text-[#12132D99] *:flex *:gap-2 *:items-center">
+                                    <div>
+                                        <img src="images/icons/comment.svg" alt="">
+                                        <span id="comment">560</span>
+                                    </div>
+                                    <div>
+                                        <img src="images/icons/time.svg" alt="">
+                                        <span id="view-time">1,577</span>
+                                    </div>
+                                    <div>
+                                        <img src="images/icons/eye.svg" alt="">
+                                        <span id="read-time">5 min</span>
+                                    </div>
+                                </div>
+                                <button id="read-button">
+                                    <img src=" images/icons/email.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="bg-[#12132D0D] p-10 rounded-xl"></div>
                 </div>
                 <div id="read-container" class="lg:w-4/12 bg-[#12132D0D] p-6 rounded-xl">
                     <div class="flex justify-between items-center mb-4">
-                        <h3 class="font-bold text-xl">
+                        <h3 class="font-mulish font-bold text-xl">
                             Title
                         </h3>
                         <h6 class="flex gap-2 text-[#12132D99]">
                             <img class="w-5 h-5" src="images/icons/check-double.svg" alt="">
-                            Mark as read (<span>0</span>)
+                            Mark as read <span id="total-read">(0)</span>
                         </h6>
                     </div>
                     <div id="read-list" class="space-y-4">
-                        <div class="flex justify-between gap-1 bg-white p-4 rounded-xl">
-                            <h2 class="font-bold">10 Kids Unaware of Their Halloween Costume</h2>
-                            <div class="flex items-center gap-1">
-                                <img class="w-5 h-5" src="images/icons/eye-line.svg" alt=""> 1,568
-                            </div>
-                        </div>
-                        <div class="flex justify-between gap-1 bg-white p-4 rounded-xl">
-                            <h2 class="font-bold">10 Kids Unaware of Their Halloween Costume</h2>
-                            <div class="flex items-center gap-1">
-                                <img class="w-5 h-5" src="images/icons/eye-line.svg" alt=""> 1,568
-                            </div>
-                        </div>
-                        <div class="flex justify-between gap-1 bg-white p-4 rounded-xl">
-                            <h2 class="font-bold">10 Kids Unaware of Their Halloween Costume</h2>
-                            <div class="flex items-center gap-1">
-                                <img class="w-5 h-5" src="images/icons/eye-line.svg" alt=""> 1,568
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -193,12 +258,12 @@
                 <h1 class="text-4xl font-extrabold mb-6">
                     Latest Posts
                 </h1>
-                <p class="lg:w-1/2 mx-auto text-[#12132D99] mb-12">
+                <p class="font-inter lg:w-1/2 mx-auto text-[#12132D99] mb-12">
                     Explore the Forum's freshest discussions and insights in our Latest Posts section. Stay informed and
                     engaged with the community.
                 </p>
             </div>
-            <div id="post-container" class="grid grid-cols-3">
+            <div id="post-container" class="grid grid-cols-1 lg:grid-cols-3">
                 <div class="p-6 border rounded-xl">
                     <div class="w-full h-48 bg-[#12132D0D] mb-6 rounded-xl overflow-hidden">
                         <img class="w-auto h-auto" src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="">
