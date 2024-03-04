@@ -3,14 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const readContainer = document.getElementById("read-container");
   const postContainer = document.getElementById("post-container");
 
-  discussContainer.style.display =
-    readContainer.style.display =
-    postContainer.style.display =
-      "none";
+  discussContainer.classList.add("hidden");
+  readContainer.classList.add("hidden");
+  postContainer.classList.add("hidden");
 
   const createLoadingSpinner = () => {
     const loadingSpinner = document.createElement("div");
-    loadingSpinner.classList.add("flex", "justify-center", "items-center");
+    loadingSpinner.className = "w-full flex justify-center items-center";
     loadingSpinner.innerHTML = `<div class="loading loading-infinity loading-lg"></div>`;
     return loadingSpinner;
   };
@@ -28,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     loadingSpinnerOne.remove();
     loadingSpinnerTwo.remove();
 
-    discussContainer.style.display = readContainer.style.display = "block";
-    postContainer.style.display = "grid";
+    discussContainer.classList.remove("hidden");
+    readContainer.classList.remove("hidden");
+    postContainer.classList.remove("hidden");
   }, 2000);
 });

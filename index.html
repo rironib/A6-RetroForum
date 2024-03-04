@@ -98,7 +98,7 @@
                             <input type="text" id="search-input"
                                 class="block w-full py-4 px-6 text-black border border-gray-300 bg-gray-50 rounded-full"
                                 placeholder="Search here anything" required />
-                            <button type="submit" onclick="btnSearch()"
+                            <button type="submit" onclick="searchBtn()"
                                 class="text-white absolute end-2.5 bottom-2.5 bg-[#797DFC] font-medium rounded-full px-4 lg:px-6 py-2 ">Search</button>
                         </div>
 
@@ -130,7 +130,7 @@
     <main class="w-11/12 max-w-[1280px] mx-auto">
 
         <!-- Let’s Discuss Section -->
-        <section id="discuss-section" class="mb-24">
+        <section class="mb-24">
             <div class="text-center">
                 <h1 class="text-4xl font-extrabold mb-6">
                     Let’s Discuss
@@ -140,7 +140,7 @@
                     Discuss forum platform.
                 </p>
             </div>
-            <div class="font-inter flex flex-col lg:flex-row gap-10">
+            <div id="discuss-section" class="font-inter flex flex-col lg:flex-row gap-10">
 
                 <div id="discuss-container" class="lg:w-8/12 space-y-4"> </div>
 
@@ -187,7 +187,7 @@
                     engaged with the community.
                 </p>
             </div>
-            <div id="post-container" class="grid grid-cols-1 lg:grid-cols-3 gap-4"> </div>
+            <div id="post-container" class=""> </div>
         </section>
     </main>
 
@@ -214,7 +214,7 @@
     </footer>
 
     <script src="js/loading.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/discuss.js"></script>
     <script src="js/script.js"></script>
     <script src="js/post.js"></script>
 </body>
