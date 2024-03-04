@@ -109,7 +109,7 @@ const searchBtn = () => {
 
       discussContainer.classList.remove("hidden");
       readContainer.classList.remove("hidden");
-    }, 1000);
+    }, 2000);
   };
   spinner();
 };
