@@ -61,11 +61,11 @@ const loadDiscussData = (posts) => {
             <img src="images/icons/comment.svg" alt="">
             <span>${post.comment_count}</span>
             <span></span>
-            <img src="images/icons/time.svg" alt="">
+            <img src="images/icons/eye.svg" alt="">
             <span id="view-time">${post.view_count}</span>
             <span></span>
-            <img src="images/icons/eye.svg" alt="">
-            <span>${post.posted_time}</span>
+            <img src="images/icons/time.svg" alt="">
+            <span>${post.posted_time} min</span>
           </div>
           <button class="read-button">
             <img src="images/icons/email.svg" alt="">
@@ -109,7 +109,7 @@ const searchBtn = () => {
 
       discussContainer.classList.remove("hidden");
       readContainer.classList.remove("hidden");
-    }, 2000);
+    }, 1000);
   };
   spinner();
 };

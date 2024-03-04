@@ -30,5 +30,5 @@ document.addEventListener("DOMContentLoaded", function () {
     discussContainer.classList.remove("hidden");
     readContainer.classList.remove("hidden");
     postContainer.classList.remove("hidden");
-  }, 2000);
+  }, 1000);
 });
